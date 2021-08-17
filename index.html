@@ -36,8 +36,8 @@
     </style>
     <script>
     function linkClicked(link){
-        document.body.style.cursor='wait';
-        //document.location = link;
+        document.getElementById("loading").style.display = "block";
+        document.location = link;
     }
     </script>
 </head>
@@ -61,6 +61,7 @@
            <img src="https://media.reshet.tv/image/upload/q_auto:good/v1611070742/assets/reshet-logo.png">
         </button>
     </div>
+    <img id="loading" src="loading.gif">
 </body>
 
 </html>
